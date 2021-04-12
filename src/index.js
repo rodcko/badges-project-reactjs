@@ -1,15 +1,12 @@
-// const element = document.createElement("h1");
-// element.innerText = "Hello, Rodcko Badges";
-
-// const container = document.getElementById("app");
-
-// container.appendChild(element);
-
 import React from "react";
 import ReactDOM from "react-dom";
 
-const element = <h1>Hola, Rodcko from !</h1>;
-
+const jsx = <h1>Hola, Rodcko from !</h1>;
+const element = React.createElement(
+  "a",
+  { href: "https://platzi.com" },
+  "Ir a Platzi"
+);
 const container = document.getElementById("app");
 
 // ReactDOM.render(__que__, __donde__);
