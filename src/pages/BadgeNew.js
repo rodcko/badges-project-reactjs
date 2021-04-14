@@ -4,6 +4,7 @@ import "./styles/BadgeNew.css";
 import header from "../images/badge-header.svg";
 import Navbar from "../components/Navbar";
 import Badge from "../components/Badge";
+import BadgeForm from "../components/BadgeForm.js";
 
 class BadgeNew extends React.Component {
   render() {
@@ -23,6 +24,10 @@ class BadgeNew extends React.Component {
                 jobTitle="Software Architect"
                 avatarUrl="https://secure.gravatar.com/avatar/a2d1c6738a16234e1c63f2d637c23130"
               ></Badge>
+            </div>
+
+            <div className="col-6">
+              <BadgeForm />
             </div>
           </div>
         </div>
