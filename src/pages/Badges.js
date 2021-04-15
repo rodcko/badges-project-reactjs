@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 import "./styles/Badges.css";
 import confLogo from "../images/badge-header.svg";
-import Badge from "../components/Badge";
 import BadgesList from "../components/BadgesList";
-
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";
 import api from "../api";
+
 class Badges extends React.Component {
   state = {
     loading: true,
@@ -30,12 +31,12 @@ class Badges extends React.Component {
   };
 
   render() {
-    if (this.state.loading == true) {
-      return "Loading ...";
+    if (this.state.loading === true) {
+      return <PageLoading />;
     }
 
     if (this.state.error) {
-      return `Error: ${this.state.error.message}`;
+      return <PageError error={this.state.error} />;
     }
 
     return (
@@ -46,24 +47,20 @@ class Badges extends React.Component {
               <img
                 className="Badges_conf-logo"
                 src={confLogo}
-                alt="Conf logo"
+                alt="Conf Logo"
               />
             </div>
           </div>
         </div>
 
-        <div className="Badge__container">
+        <div className="Badges__container">
           <div className="Badges__buttons">
             <Link to="/badges/new" className="btn btn-primary">
               New Badge
             </Link>
           </div>
 
-          <div className="Badges__list">
-            <div className="Badges__container">
-              <BadgesList badges={this.state.data} />
-            </div>
-          </div>
+          <BadgesList badges={this.state.data} />
         </div>
       </React.Fragment>
     );
