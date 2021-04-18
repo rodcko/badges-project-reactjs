@@ -16,7 +16,7 @@ class BadgesList extends React.Component {
       );
     }
     return (
-      <ul className="list-unstyled BadgesList">
+      <ul className="list-unstyled BadgesList badge_list">
         {this.props.badges.map((badge) => {
           return (
             <li key={badge.id} className="BadgesListItem">

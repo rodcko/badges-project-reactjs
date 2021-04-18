@@ -28,3 +28,7 @@
   margin-right: 0.3rem;
   vertical-align: middle;
 }
+.badge_list {
+  display: flex;
+  flex-direction: column-reverse;
+}
