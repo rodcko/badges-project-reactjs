@@ -442,12 +442,20 @@
       "id": "npaYZKI"
     },
     {
-      "firstName": "pepe",
-      "lastName": "abzum",
-      "email": "rodcko1@live.com",
-      "jobTitle": "engineer",
-      "twitter": "xd",
-      "id": "Q7HTzVE"
+      "firstName": "Rodrigo",
+      "lastName": "Hernandez",
+      "email": "rodcko@live.com",
+      "jobTitle": "Software Architect",
+      "twitter": "rodcko_",
+      "id": "-AP0VOD"
+    },
+    {
+      "firstName": "Oscar",
+      "lastName": "Calderon Garcia",
+      "email": "ocaldero006@gmail.com",
+      "jobTitle": "It Manager",
+      "twitter": "ocaldero006",
+      "id": "oAteWbP"
     }
   ]
 }
